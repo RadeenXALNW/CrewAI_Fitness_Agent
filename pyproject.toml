@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fitness-planner-crew"
+version = "0.0.1"
+description = "Fitness agent tailored for each clients"
+authors = ["Radeen Mostafa <radeensust@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+crewai = "^0.11.0"
+unstructured = '==0.10.25'
+pyowm = '3.3.0'
+tools = "^0.1.9"
+python-dotenv = "1.0.0"
+langchain-groq="^0.0.1"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
