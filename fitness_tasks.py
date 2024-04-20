@@ -4,7 +4,7 @@ from datetime import date
 
 
 class FitnessTasks():
-
+#identify_task will identify and select the task based on client's bio information.
   def identify_task(self, agent, weight, diet, goal, date,context=None):
     return Task(description=dedent(f"""
         Analyze and select the best fitness plan for the client based 
@@ -25,7 +25,7 @@ class FitnessTasks():
         Achievable date: {date}
       """),
                 agent=agent,context=context)
-
+#Gather task then will gather all relevant information on the defined selected task.
   def gather_task(self, agent, diet, goal, date,context=None):
     return Task(description=dedent(f"""
         As a fitness expert on this task you must compile an 
@@ -51,7 +51,7 @@ class FitnessTasks():
         Goal : {goal}
         Achievable date: {date}
       """),agent=agent,context=context)
-
+#plan_task will create a thorough plan based on analyzing all the information get from the gather_task.
   def plan_task(self, agent, diet, goal, date,context=None):
     return Task(description=dedent(f"""
         Expand this guide into a a full 30-day fitness plan
