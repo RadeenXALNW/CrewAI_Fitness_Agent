@@ -51,4 +51,10 @@ poetry run python main.py
 
 **Here is a sample of fitness plan after analyzing your diet and health parameters.**
 
++ User Input:
+  + User's Weight
+  + User's Current Diet
+  + Goal to achieve
+  + Achievable Date
+
 ![Fitness Plan for 30 days](https://github.com/RadeenXALNW/crewai_fitnessagent/assets/66905164/5b6a49f9-8a7a-4a67-aa5f-69a17133a2bf)
