@@ -1,7 +1,7 @@
 ## Your Personal Fitness Agent :muscle: :leg:
 at first import the repository
 ```
-git clone git clone --branch master https://github.com/RadeenXALNW/crewai_fitnessagent.git
+git clone --branch master https://github.com/RadeenXALNW/crewai_fitnessagent.git
 ```
 change your directory to repo directory
 ```
