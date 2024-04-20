@@ -30,6 +30,11 @@ docker run -d --rm --name browserless -p 3000:3000 browserless/chrome
 ```
 pip show crewai pydantic
 ```
+Make sure to set your all environment variables and API keys. 
+```
+export variable_name=<api_key>
+export model_name=<model_name>
+```
 Now run the main.py and play with it :shipit:
 ```
 poetry run python main.py
