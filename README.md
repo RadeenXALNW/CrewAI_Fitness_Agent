@@ -42,8 +42,12 @@ poetry run python main.py
 >[!TIP]
 >Make sure you have a stable internet connection.
 
->[!CAUTION]
+>[!NOTE]
 >Sometimes API fails to generate properly.
+
+>[!CAUTION]
+>Mixtral 8*7b sometimes can cause rate limit error. We,therefore set max request per minute parameter.
+
 **Here is a sample of fitness plan after analyzing your diet and health parameters.**
 
 ![Fitness Plan for 30 days](https://github.com/RadeenXALNW/crewai_fitnessagent/assets/66905164/5b6a49f9-8a7a-4a67-aa5f-69a17133a2bf)
